@@ -1,5 +1,10 @@
 @use "./base.scss";
 
+// Narrower content column for optimal reading width (~65-75 chars)
+.center > article {
+  max-width: 680px;
+}
+
 // Content meta: sans-serif, all caps, subdued
 .content-meta {
   font-family: "Source Sans 3", var(--headerFont), sans-serif;
