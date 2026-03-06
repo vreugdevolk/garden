@@ -1,5 +1,16 @@
 @use "./base.scss";
 
+// Sticky footer: push footer to bottom when content is short
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1;
+}
+
 // Narrower content column for optimal reading width (~65-75 chars)
 .center > article {
   max-width: 680px;
