@@ -1,3 +1,10 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Content meta: sans-serif, all caps, subdued
+.content-meta {
+  font-family: "Source Sans 3", var(--headerFont), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85rem;
+  color: var(--gray);
+}
