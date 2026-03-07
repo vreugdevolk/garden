@@ -26,7 +26,11 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
   function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
     const text = fileData.text
 
-    if (text) {
+    // Skip garden metadata on folder index pages
+    const slug = fileData.slug ?? ""
+    const isFolderIndex = slug === "index" || slug.endsWith("/index")
+
+    if (text && !isFolderIndex) {
       const segments: (string | JSX.Element)[] = []
 
       // Growth status from tags
@@ -40,19 +44,22 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       if (fileData.dates) {
         const created = fileData.dates.created
         const modified = fileData.dates.modified
-        if (created) {
+        // Ensure created is the earlier date
+        const planted = created && modified && modified < created ? modified : created
+        const tended = created && modified && modified < created ? created : modified
+        if (planted) {
           segments.push(
             <span>
               Gezaaid op{" "}
-              <time datetime={created.toISOString()}>{formatDate(created, cfg.locale)}</time>
+              <time datetime={planted.toISOString()}>{formatDate(planted, cfg.locale)}</time>
             </span>,
           )
         }
-        if (modified && created && modified.getTime() !== created.getTime()) {
+        if (tended && planted && tended.getTime() !== planted.getTime()) {
           segments.push(
             <span>
               laatst gewied op{" "}
-              <time datetime={modified.toISOString()}>{formatDate(modified, cfg.locale)}</time>
+              <time datetime={tended.toISOString()}>{formatDate(tended, cfg.locale)}</time>
             </span>,
           )
         }
