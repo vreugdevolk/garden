@@ -1,15 +1,16 @@
-import { Date, getDate } from "./Date"
+import { formatDate } from "./Date"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import readingTime from "reading-time"
 import { classNames } from "../util/lang"
-import { i18n } from "../i18n"
 import { JSX } from "preact"
 import style from "./styles/contentMeta.scss"
 
+const growthLabels: Record<string, string> = {
+  seedling: "Kiem",
+  budding: "In bloei",
+  evergreen: "Groenblijver",
+}
+
 interface ContentMetaOptions {
-  /**
-   * Whether to display reading time
-   */
   showReadingTime: boolean
   showComma: boolean
 }
@@ -20,7 +21,6 @@ const defaultOptions: ContentMetaOptions = {
 }
 
 export default ((opts?: Partial<ContentMetaOptions>) => {
-  // Merge options with defaults
   const options: ContentMetaOptions = { ...defaultOptions, ...opts }
 
   function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
@@ -29,17 +29,33 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
     if (text) {
       const segments: (string | JSX.Element)[] = []
 
-      if (fileData.dates) {
-        segments.push(<Date date={getDate(cfg, fileData)!} locale={cfg.locale} />)
+      // Growth status from tags
+      const tags = fileData.frontmatter?.tags ?? []
+      const growthTag = tags.find((t: string) => t in growthLabels)
+      if (growthTag) {
+        segments.push(<span class={`growth-status ${growthTag}`}>{growthLabels[growthTag]}</span>)
       }
 
-      // Display reading time if enabled
-      if (options.showReadingTime) {
-        const { minutes, words: _words } = readingTime(text)
-        const displayedTime = i18n(cfg.locale).components.contentMeta.readingTime({
-          minutes: Math.ceil(minutes),
-        })
-        segments.push(<span>{displayedTime}</span>)
+      // Garden dates: "Gezaaid op" (created) and "Laatst gewied op" (modified)
+      if (fileData.dates) {
+        const created = fileData.dates.created
+        const modified = fileData.dates.modified
+        if (created) {
+          segments.push(
+            <span>
+              Gezaaid op{" "}
+              <time datetime={created.toISOString()}>{formatDate(created, cfg.locale)}</time>
+            </span>,
+          )
+        }
+        if (modified && created && modified.getTime() !== created.getTime()) {
+          segments.push(
+            <span>
+              laatst gewied op{" "}
+              <time datetime={modified.toISOString()}>{formatDate(modified, cfg.locale)}</time>
+            </span>,
+          )
+        }
       }
 
       return (
