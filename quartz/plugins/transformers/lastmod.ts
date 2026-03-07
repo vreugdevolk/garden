@@ -5,15 +5,18 @@ import path from "path"
 import { styleText } from "util"
 
 export interface Options {
-  priority: ("frontmatter" | "git" | "filesystem")[]
+  priority: ("frontmatter" | "filename" | "git" | "filesystem")[]
 }
 
 const defaultOptions: Options = {
-  priority: ["frontmatter", "git", "filesystem"],
+  priority: ["frontmatter", "filename", "git", "filesystem"],
 }
 
 // YYYY-MM-DD
 const iso8601DateOnlyRegex = /^\d{4}-\d{2}-\d{2}$/
+
+// YYYYMMDD in filename (e.g. 20260306.md)
+const filenameDateRegex = /(?:^|\/)((\d{4})(\d{2})(\d{2}))\.\w+$/
 
 function coerceDate(fp: string, d: any): Date {
   // check ISO8601 date-only format
@@ -73,6 +76,11 @@ export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options>> = (u
                 const st = await fs.promises.stat(fullFp)
                 created ||= st.birthtimeMs
                 modified ||= st.mtimeMs
+              } else if (source === "filename") {
+                const match = fp.match(filenameDateRegex)
+                if (match) {
+                  created ||= `${match[2]}-${match[3]}-${match[4]}`
+                }
               } else if (source === "frontmatter" && file.data.frontmatter) {
                 created ||= file.data.frontmatter.created as MaybeDate
                 modified ||= file.data.frontmatter.modified as MaybeDate
