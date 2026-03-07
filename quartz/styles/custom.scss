@@ -24,3 +24,8 @@ body {
   font-size: 0.85rem;
   color: var(--gray);
 }
+
+// Empty collections: subdued to show they have no content yet
+.empty-collection {
+  opacity: 0.45;
+}

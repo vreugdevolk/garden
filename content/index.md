@@ -7,6 +7,6 @@ Welkom in mijn digitale tuin. Ik werk met de garagedeur open — wat je hier vin
 ## Wat groeit hier
 
 - **[[journal/index|Journal]]** — updates over wat er gebeurt
-- **[[reflecties/index|Reflecties]]** — wat ik erover denk
-- **[[leesnotities/index|Leesnotities]]** — aantekeningen bij wat ik lees
-- **[[aanbevelingen/index|Aanbevelingen]]** — dingen die ik aanraad
+- <span class="empty-collection">**[[reflecties/index|Reflecties]]** — wat ik erover denk</span>
+- <span class="empty-collection">**[[leesnotities/index|Leesnotities]]** — aantekeningen bij wat ik lees</span>
+- <span class="empty-collection">**[[aanbevelingen/index|Aanbevelingen]]** — dingen die ik aanraad</span>
