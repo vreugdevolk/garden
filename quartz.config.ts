@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "nl-NL",
-    baseUrl: "garden.vercel.app",
+    baseUrl: "martijn.garden",
     ignorePatterns: ["templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
