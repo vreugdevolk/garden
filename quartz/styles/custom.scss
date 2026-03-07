@@ -11,9 +11,11 @@ body {
   flex: 1;
 }
 
-// Narrower content column for optimal reading width (~65-75 chars)
-.center > article {
-  max-width: 680px;
+// Narrower content column for optimal reading width (~65-75 chars), desktop only
+@media (min-width: 768px) {
+  .center > article {
+    max-width: 680px;
+  }
 }
 
 // Content meta: sans-serif, subdued
