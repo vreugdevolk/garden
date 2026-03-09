@@ -4,11 +4,22 @@ import { classNames } from "../util/lang"
 import { JSX } from "preact"
 import style from "./styles/contentMeta.scss"
 
-const growthLabels: Record<string, string> = {
-  seedling: "Kiem",
-  budding: "In bloei",
-  evergreen: "Groenblijver",
+const growthStages: Record<string, { label: string; tooltip: string }> = {
+  seedling: {
+    label: "Kiem",
+    tooltip: "Een pril idee — net geplant, nog niet uitgewerkt",
+  },
+  budding: {
+    label: "In bloei",
+    tooltip: "Groeit en krijgt vorm, maar is nog niet af",
+  },
+  evergreen: {
+    label: "Groenblijver",
+    tooltip: "Uitgegroeid en regelmatig bijgehouden",
+  },
 }
+
+export const growthTagNames = Object.keys(growthStages)
 
 interface ContentMetaOptions {
   showReadingTime: boolean
@@ -31,9 +42,14 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
       // Growth status from tags
       const tags = fileData.frontmatter?.tags ?? []
-      const growthTag = tags.find((t: string) => t in growthLabels)
+      const growthTag = tags.find((t: string) => t in growthStages)
       if (growthTag) {
-        segments.push(<span class={`growth-status ${growthTag}`}>{growthLabels[growthTag]}</span>)
+        const stage = growthStages[growthTag]
+        segments.push(
+          <span class={`growth-status ${growthTag}`} title={stage.tooltip} tabindex={0}>
+            {stage.label}
+          </span>,
+        )
       }
 
       // Garden dates: "Gezaaid op" (created) and "Laatst gewied op" (modified)

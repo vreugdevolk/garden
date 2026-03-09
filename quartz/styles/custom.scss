@@ -23,11 +23,40 @@ body {
   color: var(--gray);
 }
 
-// Growth status indicator
+// Growth status indicator with tooltip
 .growth-status {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 600;
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dotted var(--gray);
+
+  // Tooltip
+  &::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    margin-bottom: 6px;
+    padding: 0.4rem 0.6rem;
+    background: var(--dark);
+    color: var(--light);
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    white-space: nowrap;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
 }
 
 // Empty collections: subdued to show they have no content yet
