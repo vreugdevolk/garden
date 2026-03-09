@@ -2,7 +2,9 @@
 title: Martijn
 ---
 
-Welkom in mijn digitale tuin. Ik werk met de garagedeur open — wat je hier vindt zijn gedachten in ontwikkeling, geen afgeronde stukken.
+Welkom in mijn digitale tuin. Ik werk, zogezegd, met m'n tuinhek open — wat je hier vindt zijn gedachten in ontwikkeling, geen afgeronde stukken.
+
+→ [[20260306|Waarom een digitale tuin?]]
 
 ## Wat groeit hier
 
