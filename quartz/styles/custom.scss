@@ -32,9 +32,9 @@ body {
   cursor: help;
   border-bottom: 1px dotted var(--gray);
 
-  // Tooltip
-  &::after {
-    content: attr(title);
+  // Tooltip (uses ::before to avoid conflict with comma ::after)
+  &::before {
+    content: attr(data-tooltip);
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -53,8 +53,8 @@ body {
     transition: opacity 0.15s;
   }
 
-  &:hover::after,
-  &:focus::after {
+  &:hover::before,
+  &:focus::before {
     opacity: 1;
   }
 }

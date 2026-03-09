@@ -46,7 +46,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       if (growthTag) {
         const stage = growthStages[growthTag]
         segments.push(
-          <span class={`growth-status ${growthTag}`} title={stage.tooltip} tabindex={0}>
+          <span class={`growth-status ${growthTag}`} data-tooltip={stage.tooltip} tabindex={0}>
             {stage.label}
           </span>,
         )
