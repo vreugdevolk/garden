@@ -2,7 +2,7 @@
 title: Martijn
 ---
 
-Welkom in mijn digitale tuin. Ik werk, zogezegd, met m'n tuinhek open — wat je hier vindt zijn gedachten in ontwikkeling, geen afgeronde stukken.
+Welkom in mijn digitale tuin. Ik werk, zogezegd, met m'n tuinhek op een kier — Je mag altijd  m'n tuin even binnen wandelen en komen kijken, maar wat je hier vindt zijn gedachten in ontwikkeling, geen afgeronde stukken.
 
 → [[20260306|Waarom een digitale tuin?]]
 
