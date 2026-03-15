@@ -1,5 +1,5 @@
 ---
-title: De tuin begint
+title: Waarom een digitale tuin?
 tags:
   - seedling
 ---
