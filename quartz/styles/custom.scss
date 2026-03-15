@@ -12,7 +12,14 @@ body {
 }
 
 // Narrower content column for optimal reading width (~65-75 chars)
-.center > article {
+// Applies to both direct articles (content pages) and popover-hint wrappers (folder/tag pages)
+.center > article,
+.center > .popover-hint {
+  max-width: 680px;
+}
+
+// Constrain the <hr> separator to match content width
+.center > hr {
   max-width: 680px;
 }
 
