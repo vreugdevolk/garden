@@ -23,11 +23,11 @@ body {
   max-width: 680px;
 }
 
-// Content meta: sans-serif, subdued
+// Content meta: sans-serif, subdued (min 4.5:1 contrast ratio)
 .content-meta {
   font-family: "Source Sans 3", var(--headerFont), sans-serif;
   font-size: 0.85rem;
-  color: var(--gray);
+  color: #808080;
 }
 
 // Growth status indicator with tooltip
@@ -53,16 +53,30 @@ body {
     font-weight: 400;
     text-transform: none;
     letter-spacing: 0;
-    white-space: nowrap;
+    white-space: normal;
+    max-width: min(320px, 90vw);
     border-radius: 4px;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.15s;
   }
 
+  // Visible focus ring for keyboard users
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
   &:hover::before,
   &:focus::before {
     opacity: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &::before {
+      transition: none;
+    }
   }
 }
 
