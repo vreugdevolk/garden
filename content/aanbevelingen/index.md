@@ -2,4 +2,4 @@
 title: Aanbevelingen
 ---
 
-Dingen die ik aanraad.
+Zaken die ik je tijd waard vind.

@@ -2,4 +2,4 @@
 title: Reflecties
 ---
 
-Gedachten over wat ik meemaak en leer.
+Ruimhartige overdenkingen over 't leven.
