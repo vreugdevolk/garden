@@ -6,7 +6,7 @@ date: 2026-03-15
 ---
 Is er eten dat je zó lekker vindt dat je soms het gevoel hebt dat je het eigenlijk minder zou moeten eten om er later extra van te kunnen genieten? Dat je dat écht denkt, maar vervolgens je hele mond zonder pardon vol duwt, gewoon omdat het kan?
 
-Dat is een beetje **Exploring My Strange Bible** voor mij.
+Dat is een beetje [**Exploring My Strange Bible**](https://podcasts.apple.com/nl/podcast/exploring-my-strange-bible/id1271147429) voor mij.
 
 De podcast van Tim Mackie waarin hij—raad maar—z'n Bijbel ontdekt door er zo diep in te duiken dat je hoopt dat 'ie een zaklamp heeft meegenomen.
 

@@ -12,7 +12,7 @@ Ik kan zo maar eens een man van 400.000 ongepubliceerde woorden zijn.
 
 Dat zijn te veel woorden; in ieder geval om in één hoofd opgehoopt te houden.
 
-Daarom ben ik begonnen aan deze digitale tuin; een interessant concept dat ik een tijd terug tegenkwam. Iemand legde het uit als 'working with the garage doors open'. Het is geen blog waar ik beloof af en toe een gepolijst verhaal te publiceren, maar waar ik vervolgens dagen, weken, maanden twijfel over elke alinea en louter lege pagina's overhoud. 
+Daarom ben ik begonnen aan deze digitale tuin; een interessant concept dat ik een tijd terug tegenkwam. [Iemand](https://andymatuschak.org) legde het uit als 'working with the garage doors open'. Het is geen blog waar ik beloof af en toe een gepolijst verhaal te publiceren, maar waar ik vervolgens dagen, weken, maanden twijfel over elke alinea en louter lege pagina's overhoud. 
 
 Dit is een plek om gedachten te delen terwijl ze nog groeien. Sommige dingen staan er net, gepland als zaadjes. Anderen hebben al wat meer liefde ontvangen, maar niets is ooit helemaal 'af' en dat is precies het punt.
 
