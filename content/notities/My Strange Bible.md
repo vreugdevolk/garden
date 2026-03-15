@@ -10,8 +10,8 @@ Dat is een beetje [**Exploring My Strange Bible**](https://podcasts.apple.com/nl
 
 De podcast van Tim Mackie waarin hij—raad maar—z'n Bijbel ontdekt door er zo diep in te duiken dat je hoopt dat 'ie een zaklamp heeft meegenomen.
 
-Het is heerlijk om deze 'card carrying Bible nerd' los te horen gaan, zo lekker dat ik—eh, nouja...het gebruik om bij slaap te vallen. Ja echt—terwijl ik het liefst alles mee zou krijgen kan ik niet anders dan voor de helft in slaap vallen.
+Het is heerlijk om deze 'card carrying Bible nerd' los te horen gaan, zo lekker dat ik—eh, nouja...het gebruik om bij slaap te vallen. Ja echt—terwijl ik het liefst alles mee zou krijgen kan ik niet anders dan vóór het einde van de eerste helft al in slaap vallen.
 
-Voor het slapen gaan is nou eenmaal een perfecte tijd om naar een podcast te luisteren. Terwijl ik deze podcast eigenlijk zo goed vind dat ik er eigenlijk voor zou moeten gaan zitten om echt aandachtig te luisteren.
+Voor het slapen gaan is nou eenmaal een perfecte tijd om naar een podcast te luisteren. Terwijl ik deze podcast eigenlijk zo goed vind dat ik er voor zou moeten gaan zitten om echt aandachtig te luisteren.
 
 Nouja, luister zelf mee enne ... slaap lekker.
