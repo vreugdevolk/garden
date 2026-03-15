@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "nl-NL",
     baseUrl: "martijn.garden",
-    ignorePatterns: ["templates", ".obsidian"],
+    ignorePatterns: ["templates", ".obsidian", "scratchpad"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
