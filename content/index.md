@@ -2,7 +2,7 @@
 title: Martijn
 ---
 
-Welkom in mijn digitale tuin. Ik werk, zogezegd, met m'n tuinhek op een kier — Je mag altijd  m'n tuin even binnen wandelen en komen kijken, maar wat je hier vindt zijn gedachten in ontwikkeling, geen afgeronde stukken.
+Welkom in mijn digitale tuin. Ik werk, zogezegd, met m'n tuinhek op een kier — Je mag altijd  m'n tuin even binnen wandelen en komen kijken, maar wat je hier vindt zijn gedachten in ontwikkeling, geen afgeronde stukken. Het is mijn verlangen het verhaal van God te vertellen, maar dat doe ik zoals ik ben: imperfect—met verlangen, liefde en een lach.
 
 → [[20260306|Waarom een digitale tuin?]]
 
